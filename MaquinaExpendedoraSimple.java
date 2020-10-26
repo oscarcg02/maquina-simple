@@ -2,6 +2,7 @@ public class MaquinaExpendedoraSimple {
     
     // El precio del billete
     private int precioBillete;
+    private int reducirPrecio;
     // La cantidad de dinero que lleva metida el cliente actual
     private int balanceClienteActual;
     // El total de dinero almacenado en la maquina desde su ultimo vaciado
@@ -63,6 +64,13 @@ public class MaquinaExpendedoraSimple {
      */
      public void setPrecioBillete(int precioNuevo) {
         precioBillete = precioNuevo;
+    }
+    
+    /**
+     * Reducir
+     */
+     public void setReducirPrecio(int reducirPrecio) {
+        precioBillete = precioBillete - reducirPrecio;
     }
     
     /**
